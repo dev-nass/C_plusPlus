@@ -1,0 +1,46 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    int yourNum;
+    cout << "Please enter a number: ";
+    cin >> yourNum;
+
+    int otherNum;
+    cout << "Please enter another number: ";
+    cin >> otherNum;
+
+    char ope;
+    cout << "Please choose what operation you want to perform: " << endl;
+    cout << "1. Addition (+)" << endl;
+    cout << "2. Subraction (-)" << endl;
+    cout << "3. Multiplication (*)" << endl;
+    cout << "4. Division (/)" << endl;
+    cout << "Enter the arithmetic symbol: ";
+    cin >> ope;
+
+    cout << "The sum is: ";
+
+    switch (ope) {
+        case '+':
+        cout << yourNum + otherNum;
+        break;
+
+        case '-':
+        cout << yourNum - otherNum;
+        break;
+
+        case '*':
+        cout << yourNum * otherNum;
+        break;
+
+        case '/':
+        cout << yourNum / otherNum;
+        break;
+
+        default:
+        cout << "ERROR!";
+        break;
+    }
+    return 0;
+}
