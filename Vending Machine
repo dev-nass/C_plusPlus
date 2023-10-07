@@ -1,0 +1,56 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    const int price_drink = 100;
+    
+    int peso;
+    cout << "Please enter a peso: ";
+    cin >> peso;
+
+    int sampu;
+    cout << "Pleae enter how many sampu: ";
+    cin >> sampu;
+
+    int bente;
+    cout << "How many bente: ";
+    cin >> bente;
+
+    int sum = (peso * 1) + (sampu * 10) + (bente * 20);
+
+    int drink;
+    cout << "Please choose what drink you prefer: " << endl;
+    cout << "1. Lemon" << endl;
+    cout << "2. Root Bear" << endl;
+    cout << "3. Rc" << endl;
+    cout << "4. Coke" << endl;
+    cout << "5. Zesto" << endl;
+    cout << "Please enter only the number: ";
+    cin >> drink;
+
+    switch (drink) {
+        case 1:
+        cout << "Here's your Lemon" << endl;
+        break;
+
+        case 2:
+        cout << "Here's your root break" << endl;
+        break;
+
+        case 3:
+        cout << "Here's your RC" << endl;
+        break;
+
+        case 4:
+        cout << "Here's your Coke" << endl;
+        break;
+
+        case 5:
+        cout << "Here's your zesto" << endl;
+        break;
+    }
+
+    int change = sum - price_drink;
+    cout << "Here's your change: " << change;
+    return 0;
+}
