@@ -1,0 +1,37 @@
+#include <iostream>
+#include <string>
+using namespace std;
+
+class playerInfo {
+	public:
+		string userName;
+		string type;
+		int hp;
+		int mp;
+		int level;
+		int exp;
+};
+
+int main () {
+	playerInfo info1;
+	info1.userName = "Ronald";
+	info1.type = "Mage";
+	info1.hp = 500;
+	info1.mp = 1000;
+	info1.level = 58;
+	info1.exp = 9999;
+
+	playerInfo info2;
+	info2.userName = "Jonas";
+	info2.type = "Figther";
+	info2.hp = 1000;
+	info2.mp = 500;
+	info2.level = 59;
+	info2.exp = 9999;
+
+	cout << info1.userName << endl << info1.type << endl << info1.hp << endl << info1.mp << endl << info1.level << endl << info1.exp << endl;
+	cout << endl;
+	cout << info2.userName << endl << info2. type << endl << info2.hp << endl << info2.mp << endl << info2.level << endl << info2.exp << endl;
+
+	return 0;
+}
