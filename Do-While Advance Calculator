@@ -1,0 +1,52 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    char again;
+
+    do {
+        int num;
+        int num2;
+
+        cout << "Please enter a number: ";
+        cin >> num;
+
+        cout << "Please enter another number: ";
+        cin >> num2;
+
+        char ope;
+        cout << "Select arithmetic operation" << endl;
+        cout << "1. Addition (+)" << endl;
+        cout << "2. Subtraction (-)" << endl;
+        cout << "3. Multiplication (*)" << endl;
+        cout << "4. Division (/)" << endl;
+        cout << "Enter your choice: ";
+        cin >> ope;
+        cout << "Result: ";
+
+        switch (ope) {
+            case '+':
+            cout << num + num2 << endl;
+            break;
+
+            case '-':
+            cout << num - num2 << endl;
+            break;
+
+            case '*':
+            cout << num * num2 << endl;
+            break;
+
+            case '/':
+            cout << num / num2 << endl;
+            break;
+
+            default:
+            cout << "Invalid operator choice, please select only in (1-4)" << endl;
+        }
+            cout << "Do you want to perform another calculation (Y/N): ";
+            cin >> again;
+    }   while (again == 'y' || again == 'Y');
+
+    return 0;
+}
