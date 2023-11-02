@@ -1,0 +1,29 @@
+#include <iostream>
+using namespace std;
+
+class User {
+    public:
+        //attributes
+        string name;
+        string role;
+        int hp;
+        int mp;
+        int level;
+
+      //constructor and its parameter
+        User (string Aname, string Arole, int Ahp, int Amp, int Alevel) {
+            name = Aname;
+            role = Arole;
+            hp = Ahp;
+            mp = Amp;
+            level = Alevel;
+
+         cout << name << " is registered" << endl;
+        }
+};
+
+int main () {
+    User playerOne ("Jonas", "Tank", 100, 100, 100);
+    User playerTwo ("Rawr", "Mage", 100, 100, 100);
+
+}
