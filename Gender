@@ -1,0 +1,58 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    char sex; // use to determine if Male or Female
+    char justM; // use to determine if the Male is straight
+    char justF; // use to determine if the Female is straight
+    char genderM; // use to determine if the Male is Gay or Neutral
+    char genderF; // use to determine if the Female is Gay or Neutral
+    char lgbtqM; // use to determine if the Male that is Neutral is a bisexual or a transgender
+    char lgbtqF; // use to determine if the Female that is Neutral is a bisexual or a transgender
+    /*char choice; */
+
+    cout << "Are a male or a female ('m' or 'f'): ";
+    cin >> sex;
+
+    if (sex == 'm') {
+        cout << "Are you just a male? ('y' or 'n'): ";
+        cin >> justM;
+    }   if (justM == 'y') {
+        cout << "you are just a male!";
+    } else if (justM == 'n') {
+        cout << "are you a gay or neutral ('g' or 'n'): ";
+        cin >> genderM;
+    } if (genderM == 'g') {
+        cout << "you are gay!";
+    } else if (genderM == 'n') {
+        cout << "you are neutral!" << endl;
+        cout << "are you a 'b' or an 't': ";
+        cin >> lgbtqM;
+    } if (lgbtqM == 'b') {
+        cout << "you are a b";
+    } else if (lgbtqM == 't') {
+        cout << "you are a t";
+    }
+
+    if (sex == 'f') {
+        cout << "Are you just a female ('y' or 'n'): ";
+        cin >> justF;
+    } if (justF == 'y') {
+        cout << "You are a female!";
+    } else if (justF == 'n') {
+        cout << "are you a gay or a neutral ('g' or 'n'): ";
+        cin >> genderF;
+    }  if (genderF == 'g') {
+        cout << "you are a gay!";
+    } else if (genderF == 'n') {
+        cout << "you are a neutral!" << endl;
+        cout << "are you a 'b' or a 't': ";
+        cin >> lgbtqF;
+    } if (lgbtqF == 'b') {
+        cout << "you are a b ";
+    } else if (lgbtqF == 't') {
+        cout << "you are t";
+    }
+
+    return 0;
+}
