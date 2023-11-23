@@ -1,0 +1,34 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    string planet;
+    int live = 3;
+
+    cout << "*******" << endl;
+    cout << endl;
+    cout << "Lives: " << live << endl;
+    cout << endl;
+    cout << "*******" << endl;
+
+    do {
+        cout << "What is the hottest planet: ";
+        cin >> planet;
+
+        if (planet != "Venus" && planet != "venus") {
+            cout << "You are wrong!" << endl;
+            live--;
+            cout << "Remaining Lives: " << live << endl;
+        } else if (planet == "Venus" || planet == "venus") {
+            cout << "You are right!" << " ";
+            cout << "You won!";
+            break;
+        }
+        
+    } while (live > 0);
+    
+    if (live == 0) {
+        cout << "You are out of lives";
+    }
+    return 0;
+}
