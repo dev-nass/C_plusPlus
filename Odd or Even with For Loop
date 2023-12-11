@@ -1,0 +1,27 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    int num;
+    cout << "Enter a number: ";
+    cin >> num;
+    
+    if (num % 2 == 0) {
+        cout << "You enter a Even number!" << endl;
+        for (num; num <= 100; num++) {
+            if (num % 2 == 0) {
+                cout << num << endl;
+            }
+        }
+        
+    } 
+    else if (num % 2 != 0) {
+        cout << "You enter an odd number" << endl;
+        for (num; num <= 100; num++) {
+            if (num % 2 != 0) {
+                cout << num << endl;
+            }   
+        }
+    }
+    return 0;
+}
