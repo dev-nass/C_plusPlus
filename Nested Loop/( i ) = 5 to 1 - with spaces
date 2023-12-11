@@ -1,0 +1,18 @@
+#include <iostream>
+using namespace std;
+
+int main () {
+    int i, j, rows, space;
+    cout << "Rows: ";
+    cin >> rows;
+    
+    for (i = rows; i <= rows; i = i - 1) {
+        for (space = i; space < rows; space++) {
+            cout << " ";
+        }
+            for (j = 1; j <= i; j++) {
+                cout << i;
+            }
+        cout << endl;
+    }
+}
